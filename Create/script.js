@@ -24,5 +24,15 @@ const nameList = [
     "Sara"]
 
 for (const element of nameList) {
-    console.log(element);
+    //console.log(element);
+    var newSec = document.createElement('section');
+    newSec.style.backgroundColor = '#' + randomColor;
+    //console.log(newSec);
+    var newContent = document.createTextNode(element);
+    //console.log(newContent);
+    newSec.appendChild(newContent);
+    document.body.appendChild(newSec);
+    console.log(newSec);
+    //document.write(newSec);
+
 }
