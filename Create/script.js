@@ -22,6 +22,8 @@ const nameList = [
     "Ellen",
     "Sara"]
 
+// shuffle order of array.
+
 function shuffleArray(nameList) {
     for (var i = nameList.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
@@ -31,7 +33,8 @@ function shuffleArray(nameList) {
     }
 }
 shuffleArray(nameList);
-console.log(nameList);
+
+// for each element in array, create section with random bgc and textnode. append to article.~
 
 for (const element of nameList) {
     var randomColor = Math.floor(Math.random() * 16777215).toString(16);
