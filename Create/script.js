@@ -1,4 +1,4 @@
-var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
 const nameList = [
     "Ahmad",
     "Jian",
@@ -22,17 +22,13 @@ const nameList = [
     "Pieter",
     "Ellen",
     "Sara"]
-
 for (const element of nameList) {
-    //console.log(element);
+    var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     var newSec = document.createElement('section');
-    newSec.style.backgroundColor = '#' + randomColor;
-    //console.log(newSec);
+    newSec.style.backgroundColor = "#" + randomColor;
     var newContent = document.createTextNode(element);
-    //console.log(newContent);
     newSec.appendChild(newContent);
-    document.body.appendChild(newSec);
-    console.log(newSec);
-    //document.write(newSec);
-
+    document.querySelector('article').appendChild(newSec);
 }
+document.write(document.querySelector('article'));
+console.log(newSec);

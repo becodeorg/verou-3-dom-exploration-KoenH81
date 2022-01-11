@@ -1,6 +1,9 @@
 const important = document.querySelectorAll(".important");
 console.log(important);
-important.title = "This is an important item";
+for (let i = 0; i < important.length; i++) {
+    // console.log("test");
+    important[i].setAttribute("title", "This is a title.");
+}
 console.log(important);
 
 console.log("Select all the img tags and loop through them.")
@@ -24,3 +27,13 @@ for (let i = 0; i < par.length; i++) {
         var randomColor = Math.floor(Math.random() * 16777215).toString(16);
     currentP.style.color = "#" + randomColor;
 }
+
+
+
+
+
+
+
+
+
+
